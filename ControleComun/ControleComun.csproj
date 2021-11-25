@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{26426330-22A5-4D3E-9B00-7F50616EC940}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ControleComun</RootNamespace>
+    <AssemblyName>ControleComun</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Leonardo\Desktop\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>2BF05D2DA9BC4A5504B0E6C0D14F737937DFD57B</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>ControleComun_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.2.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddProduto.Designer.cs">
+      <DependentUpon>AddProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddCarrinho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCarrinho.Designer.cs">
+      <DependentUpon>AddCarrinho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VisualizarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VisualizarCliente.Designer.cs">
+      <DependentUpon>VisualizarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="AddCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCliente.Designer.cs">
+      <DependentUpon>AddCliente.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Main.pt-BR.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddProduto.resx">
+      <DependentUpon>AddProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddCarrinho.resx">
+      <DependentUpon>AddCarrinho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VisualizarCliente.resx">
+      <DependentUpon>VisualizarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="AddCliente.resx">
+      <DependentUpon>AddCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddCliente.zu-ZA.resx">
+      <DependentUpon>AddCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sunset.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1c35f89ad2c7eaf0c53f74590f8274b8-estrela-do-calor-do-sol-by-vexels.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus-1270001_1280.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngflow.com.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 e x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dff6ccf22b203c00b4ad4be6009b4630.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fundo-de-céu-png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thumb-1920-562963.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thumb-1920-659468.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cropped-deep-blue-star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\128712.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-vector-graphics-computer-icons-construction-clip-a-5c031c28bdf051.318108901543707688778.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-vector-graphics-computer-icons-construction-clip-a-5c031c28e9c8d6.8374061315437076889576.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Formularios\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-more-than-80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-back-80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-less-than-80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-less-than-40.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
